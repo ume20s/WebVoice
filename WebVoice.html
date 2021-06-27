@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src="/webiopi.js"></script>
+<script>
+function Sendtt() {
+	webiopi().callMacro( "TalkPi", document.frm.tt.value );
+	return;
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<br>
+<input type="text" name="tt" size="20"><br>
+<br>
+<input type="button" style="text-align : center;" onclick="Sendtt()" value="しゃべります"><br>
+</form>
+</body>
+</html>
